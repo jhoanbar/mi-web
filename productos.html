@@ -90,7 +90,7 @@
             width: 40%;
             background-color: rgba(15, 15, 15, 0.7); /* Transparencia */
             backdrop-filter: blur(10px); /* Efecto cristal/desenfoque */
-            padding: 30px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -104,13 +104,15 @@
 
         .modal-text p {
             line-height: 1.6;
-            font-size: 1.1em;
+            font-size: 1em;
+            overflow-wrap: break-word ; /* O usa word-wrap: break-word; para navegadores más antiguos */
         }
         .modal-text span {
             line-height: 1.6;
             font-size: 3em;
             color: #4CAF50;
-            text-align: right;
+            text-align: center;
+            padding: 1PX;
         }
 
         /* Botón para cerrar */
